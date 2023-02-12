@@ -1,0 +1,261 @@
+/* html sayfanı stillendir. */
+body{
+    background-color: khaki;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Source Code Pro', monospace;;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 9rem;
+    height: 72px;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+
+
+
+
+
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+} 
+#navbar ul li{
+    padding: 0.50rem;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#home{
+    width: 100%;
+    height: 750px;
+    background-image: url(/images/soft.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box{
+    
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+   
+
+}
+
+#logo{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 4rem;
+    top: 2rem;
+
+    
+}
+
+#para1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    margin: 0.75rem;
+    letter-spacing: 0.10;
+    background-color: black;
+    opacity: 0.70;
+    overflow: hidden;
+    font-size: 0.89rem;
+    
+    border-radius: 50px;
+    color: white;
+   
+}
+#para1head{
+    margin: 0.75rem;
+    margin-left: 4.25rem;
+   font-size: 1.9rem;
+   font-weight: bold;
+   color: #0fe0ff;
+}
+
+#references{
+    display: flex;
+   width: 900px;
+    
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 150px;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+    
+    
+}
+#ref-title{
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #0fe0ff; 
+   
+}
+
+.card-container{
+    width: 250px;
+    padding: 15px;
+}
+.card {
+    position: relative;
+    width: 400px;
+    margin: 60px auto;
+}
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card::before,
+.card::after,
+.card .card-inner {
+    /* background-color: #423F3E; */
+    background-color: wheat;
+    border: 1px solid #01937C;
+    transition: transform 0.5s;
+    width: 200px;
+    height: 200px;
+}
+.card::before,
+.card-inner {
+    z-index: 1;
+    background-color: #0fe0ff;
+}
+
+.card-inner {
+    position: relative;
+    padding: 4rem;
+    border-radius: 100px;
+    
+    
+}
+.cards:hover {
+    transform: translate(5px, 5px);
+}
+
+.cards:hover::before {
+    transform: translate(-5px, -5px);
+}
+
+.cards:hover::after {
+    transform: translate(-10px, -10px);
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.form-element{
+    padding: 1rem;
+}
+
+.form-element label{
+    display: block;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.form-control{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1;
+    font-weight: bold;
+    resize: none;
+    border-radius: 20px;
+}
+
+#contact{
+    padding: 1rem;
+}
+
+#contact-button{
+    width: 100%;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: gray;
+    border-width: 3px;
+
+}
+#contact-button:hover{
+    background-color: #0fe0ff;
+}
+
+
+#contact ul{
+    list-style-type: none;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    
+}
+#contact ul a{
+    padding: 50px;
+    font-size: 3rem;
+}
+#contact ul li a:hover{
+    opacity: 0.75;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

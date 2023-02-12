@@ -1,0 +1,9 @@
+#navbar{
+    overflow: hidden;
+}
+
+#references{
+   
+    width: 600px;
+    flex-direction: column;
+}

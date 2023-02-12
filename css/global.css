@@ -1,0 +1,41 @@
+/* tüm elemanlar için birer fonksiyon gibi css kodları buraya yazılır */
+/* classlar*/
+
+.text-center{
+    text-align: center;
+}
+.text-start
+{
+    text-align: start;
+}
+
+.bg-turkuaz
+{
+    background-color: #0fe0ff;
+}
+.bq-black
+{
+    background-color: black;
+}
+
+.small-heading{
+    font-size: 1.25rem;
+}
+.medium-heading{
+    font-size: 1,50rem;
+}
+.big-heading{
+    font-size: 1.75rem;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;  
+    
+}
+
+.ref{
+    height: 100px;
+    width: 100px;
+}
+
