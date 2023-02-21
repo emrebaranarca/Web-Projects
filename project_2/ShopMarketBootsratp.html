@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <style>
+
+          @media (max-width:768px)
+          {
+            #carouselExampleIndicators{
+              margin-top: 60px;
+            }
+            #pro,#pro_2{
+              justify-content: center;
+            }
+          }
           ::-webkit-scrollbar{
               width: 10px;
           }
@@ -16,6 +26,7 @@
               border-radius: 20px;
           }
     </style>
+    
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Bootstrap demo</title>
@@ -124,7 +135,7 @@
       <h1 id="products" class="bg-dark text-light ">PRODUCTS</h1>
 
       <section class="container mb-5">
-        <article class="row ">
+        <article class="row " id="pro">
           <div class="card col-sm me-2 mt-5" style="width: 18rem;">
             <img src="https://picsum.photos/id/36/600/600" class="card-img-top" alt="...">
             <div class="card-body">
@@ -166,7 +177,7 @@
             </div>
           </div>
         </article>
-        <article class="row  ">
+        <article class="row  " id="pro_2">
           <div class="card col-sm me-2 mt-5" style="width: 18rem;">
             <img src="https://picsum.photos/id/41/600/600" class="card-img-top" alt="...">
             <div class="card-body">
